@@ -1,13 +1,13 @@
 # Wireguard
 Configure Wireguard for 3 sites with a Dual Stack network
 
-Choose as ipv4 network 172.16.0.0/24 and generate at https://network00.com/NetworkTools/IPv6LocalAddressRangeGenerator a local ipv6 network, we use: fde2:e0e8:a244:8c60::/64 for the Wireguard interface.
+For the Wireguard interface generate at https://network00.com/NetworkTools/IPv6LocalAddressRangeGenerator a local ipv6 network and choose a private ipv4 network, we use: **172.16.0.0/24** and **fde2:e0e8:a244:8c60::/64**
 
 Network overview as in the picture below:
 
 ![Wireguard](https://user-images.githubusercontent.com/40859756/145683350-8ec4b24f-0fa0-4c04-b090-4ae33a2547ad.png)
 
-Generate public/private key for every site:
+Generate private/public keys for every site:
 ```
 mkdir -p ~/wireguard/site-01
 cd ~/wireguard/site-01
@@ -15,10 +15,10 @@ wg genkey | tee privatekey | wg pubkey > publickey
 ```
 Generate shared keys for every site combination:
 ```
-wg genpsk
+wg genpsk > presharedkey-site-01-02
 ````
 
-Edit for each site /etc/wireguard/wg0.conf:
+Edit for each site **/etc/wireguard/wg0.conf**:
 
 **Site-01**
 ```
