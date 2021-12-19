@@ -9,13 +9,23 @@ Network overview:
 
 Generate private/public keys for every site:
 ```
-mkdir -p ~/wireguard/site-01
+mkdir -p ~/wireguard/site-{01,02,03}
+
 cd ~/wireguard/site-01
+wg genkey | tee privatekey | wg pubkey > publickey
+
+cd ~/wireguard/site-02
+wg genkey | tee privatekey | wg pubkey > publickey
+
+cd ~/wireguard/site-03
 wg genkey | tee privatekey | wg pubkey > publickey
 ```
 Generate shared keys for every site combination:
 ```
+cd ~/wireguard
 wg genpsk > presharedkey-site-01-02
+wg genpsk > presharedkey-site-01-03
+wg genpsk > presharedkey-site-02-03
 ````
 
 Edit for each site **/etc/wireguard/wg0.conf**:
