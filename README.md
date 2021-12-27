@@ -33,7 +33,7 @@ Edit for each site **/etc/wireguard/wg0.conf**:
 **Site-01**
 ```
 [Interface]
-private-key kHZL5QzKc2wv/fLjDdZNUSH99tJRJlxuwGhFkcpvUUo=
+privatekey = kHZL5QzKc2wv/fLjDdZNUSH99tJRJlxuwGhFkcpvUUo=
 listenport = 47672
 Address = 172.16.0.1/32, fde2:e0e8:a244:8c60::1/128
 
