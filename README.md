@@ -48,7 +48,7 @@ persistentkeepalive = 25
 # Site-03
 publickey = qDJDiZPIPFt46llqO8zx7CXBXgSFBKU13vrfa//M/Q8=
 presharedkey = jZgY59TEnF6YDjbzor9Acdp0RS85JYLPDzuoKEhYHHI=
-allowedips = 10.99.30.0/24, 2a0f:2980:a:b:c::/64, 172.16.0.3/24, fde2:e0e8:a244:8c60::3/128
+allowedips = 10.99.30.0/24, 2a0f:2980:a:b:c::/64, 172.16.0.3/32, fde2:e0e8:a244:8c60::3/128
 persistentkeepalive = 25
 ```
 **Site-02**
