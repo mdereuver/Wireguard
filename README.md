@@ -39,7 +39,7 @@ Address = 172.16.0.1/32, fde2:e0e8:a244:8c60::1/128
 
 [Peer]
 # Site-02
-publicKey = fLVyLC8/+IBHUCVGFpxH01Z72w9hCIb7+YFCgBooSUA=
+publickey = fLVyLC8/+IBHUCVGFpxH01Z72w9hCIb7+YFCgBooSUA=
 presharedkey = XaZgt12ccgH3UVGha00h2lslS/vCSA8z4fmmmmi/BHA=
 allowedips = 10.99.20.0/24, 2001:1c01:a:b:c::/64, 172.16.0.2/32, fde2:e0e8:a244:8c60::2/128
 persistentkeepalive = 25
