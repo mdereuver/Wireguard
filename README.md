@@ -1,7 +1,7 @@
 # Wireguard
 Configure Wireguard for 3 sites with a Dual Stack network
 
-For the Wireguard interface generate at https://network00.com/NetworkTools/IPv6LocalAddressRangeGenerator a local ipv6 network and choose a private ipv4 network, we use: **172.16.0.0/24** and **fde2:e0e8:a244:8c60::/64**
+For the Wireguard interface generate at https://www.unique-local-ipv6.com a local ipv6 network and choose a private ipv4 network, we use: **172.16.0.0/24** and **fde2:e0e8:a244:8c60::/64**
 
 Network overview:
 
